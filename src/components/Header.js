@@ -6,7 +6,7 @@ const Header = () => {
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
             <div className="container-fluid space-around">
-                <h1 class="navbar-brand" href="!#">Seguros de Vida</h1>
+                <h1 className="navbar-brand" href="!#">Seguros de Vida</h1>
                 <img className="logo" src={logo} alt="logo"></img>
             </div>
         </nav>

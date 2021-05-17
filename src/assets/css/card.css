@@ -13,11 +13,6 @@
     padding: 3rem 0;
 }
 
-.card-text {
-    font-size: 0.9rem;
-    padding: 0.4rem 1.9rem;
-}
-
 .container-fluid .row {
     padding-top: 6rem;
 }
@@ -75,7 +70,7 @@
 .card-label {
     position: absolute;
     top: 164px;
-    left: 10px;
+    left: 15px;
     width: 52px;
     height: 20px;
     text-align: center;

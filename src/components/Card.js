@@ -1,19 +1,19 @@
 import React, { useContext } from 'react';
 import ApiContext from '../context/ApiContext';
+import Spinner from './Spinner';
 import '../assets/css/card.css';
 
 const Card = () => {
     const apiContext = useContext(ApiContext);
     const { loading, data } = apiContext;
-    console.log('data', data)
-    console.log('loading', loading)
+
     return (
         <div className="container-fluid d-flex justify-content-center">
             <div className="row">
                 <div className="col-md-4">
                     {
                         loading
-                            ? <p>loading</p>
+                            ? <Spinner />
                             : data &&
                             <div className="card">
                                 <div className="overflow">
@@ -23,8 +23,8 @@ const Card = () => {
                                     </div>
                                 </div>
                                 <div className="card-body text-dark">
-                                    <h4 className="card-title ms-4">{data.name}</h4>
-                                    <p className="card-text card-paragraph">
+                                    <h4 className="card-title">{data.name}</h4>
+                                    <p className="card-paragraph">
                                         {data.description}
                                     </p>
                                 </div>

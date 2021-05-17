@@ -14,16 +14,14 @@ const Selector = () => {
     };
 
     const handleClick = () => {
-        insuranceId ? getInsurance(insuranceId) : toast.error('❌ Debe seleccionar un seguro');
+        insuranceId ? getInsurance(insuranceId) : toast.info('❌ Debe seleccionar un seguro');
     }
-
-    console.log('insuranceId', insuranceId)
 
     return (
         <div className="container mt-6">
             <div className="select-box col-12">
                 <select
-                    className="col-3"
+                    className="col-xs-12 col-sm-4 col-lg-3"
                     value={insuranceId}
                     onChange={handleChange}
                 >

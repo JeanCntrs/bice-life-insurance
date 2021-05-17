@@ -3,6 +3,7 @@ import ApiContext from './ApiContext';
 import ApiReducer from './ApiReducer';
 import axiosClient from '../config/axios';
 import { GET_INSURANCE, SET_LOADING } from '../actions';
+import { toast } from 'react-toastify';
 
 const ApiState = props => {
     const initialState = {
@@ -16,14 +17,14 @@ const ApiState = props => {
         try {
             setLoading(true);
             const response = await axiosClient.get(`/interview/insurance/${insuranceId}`)
-            console.log('response', response);
+            
             dispatch({
                 type: GET_INSURANCE,
                 payload: response.data.insurance
             });
         } catch (error) {
             setLoading(false);
-            console.log('error');
+            toast.error('❌ Error al intentar obtener la información');
         }
     }
 
