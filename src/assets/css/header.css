@@ -1,0 +1,12 @@
+.logo {
+    width: 160px;
+}
+
+.space-around {
+    justify-content: space-around !important;
+}
+
+.navbar-light .navbar-brand {
+    color: rgb(130 188 0) !important;
+    font-size: 1.4rem;
+}
