@@ -10,7 +10,7 @@
 }
 
 .card-body {
-    padding: 3rem 0;
+    padding: 1rem 1rem;
 }
 
 .container-fluid .row {
@@ -61,10 +61,6 @@
     line-height: 24px;
     letter-spacing: -0.2px;
     color: #58606E;
-}
-
-.card-body {
-    padding: 1rem 0;
 }
 
 .card-label {
